@@ -9,27 +9,35 @@
     "heroVariant": "v1",
     "cardStyle": "simple"
   },
-  "clinic_name": "Your Dental Clinic",
-  "tagline": "Modern Dental Care for Your Smile",
-  "description": "Providing high-quality dental care with modern technology and a patient-first approach.",
-  "location": "Your Area, Your City",
-  "phone": "0000000000",
-  "whatsapp": "0000000000",
-  "whatsapp_message": "Hi, I'd like to book an appointment.",
+  "clinic_name": "Dr Lekhas Multispeciality Dental Clinic",
+  "tagline": "Modern Dental Care in Kaniyapuram",
+  "description": "A trusted dental clinic serving patients across Kaniyapuram and Thiruvananthapuram with modern, comfortable dental care.",
+  "location": "Kaniyapuram, Thiruvananthapuram, Kerala 695301",
+  "phone": "7012898030",
+  "whatsapp": "7012898030",
+  "whatsapp_message": "Hi, I'd like to book an appointment at Dr Lekha's Dental Clinic.",
   "google_rating": "4.8",
-  "review_count": "50",
+  "review_count": "12",
   "services": [
     {
       "name": "Teeth Whitening",
-      "description": "Professional treatments to brighten your smile."
+      "description": "Professional whitening treatments to brighten your smile."
     },
     {
       "name": "General Dentistry",
-      "description": "Routine check-ups and preventive dental care."
+      "description": "Routine check-ups, cleanings, and preventive care for all ages."
     },
     {
       "name": "Root Canal Treatment",
-      "description": "Advanced procedures to save damaged teeth."
+      "description": "Painless root canal procedures using modern techniques."
+    },
+    {
+      "name": "Dental Implants",
+      "description": "Permanent solutions for missing teeth with natural-looking results."
+    },
+    {
+      "name": "Orthodontics",
+      "description": "Braces and aligners for a perfectly aligned smile."
     }
   ],
   "theme": {
