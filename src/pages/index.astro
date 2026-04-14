@@ -1,17 +1,42 @@
 ---
+import clinic from '../data/clinic.json';
+import Layout from '../components/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Doctors from '../components/Doctors.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Features from '../components/Features.astro';
+import Contact from '../components/Contact.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
 
+// Calculate mode and feature flags safely
+const isFullMode = clinic.mode === 'full';
+const features = clinic.features || {};
+
+// Safely check what arrays have values
+const hasServices = clinic.services?.length > 0;
+const hasDoctors = clinic.doctors?.length > 0;
+const hasTestimonials = clinic.testimonials?.length > 0;
+const hasFeatures = clinic.features_list?.length > 0;
+
+// Resolve conditionals
+const renderDoctors = isFullMode && features.showDoctors && hasDoctors;
+const renderTestimonials = isFullMode && features.showTestimonials && hasTestimonials;
+const renderFeatures = isFullMode && features.showWhyChooseUs && hasFeatures;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <Hero />
+  
+  {hasServices && <Services />}
+  
+  {renderFeatures && <Features />}
+  
+  {renderDoctors && <Doctors />}
+  
+  {renderTestimonials && <Testimonials />}
+  
+  <Contact />
+  
+  <FloatingWhatsApp />
+</Layout>

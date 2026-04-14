@@ -1,0 +1,41 @@
+{
+  "mode": "demo",
+  "features": {
+    "showDoctors": false,
+    "showTestimonials": false,
+    "showWhyChooseUs": false
+  },
+  "design": {
+    "heroVariant": "v1",
+    "cardStyle": "simple"
+  },
+  "clinic_name": "Your Dental Clinic",
+  "tagline": "Modern Dental Care for Your Smile",
+  "description": "Providing high-quality dental care with modern technology and a patient-first approach.",
+  "location": "Your Area, Your City",
+  "phone": "0000000000",
+  "whatsapp": "0000000000",
+  "whatsapp_message": "Hi, I'd like to book an appointment.",
+  "google_rating": "4.8",
+  "review_count": "50",
+  "services": [
+    {
+      "name": "Teeth Whitening",
+      "description": "Professional treatments to brighten your smile."
+    },
+    {
+      "name": "General Dentistry",
+      "description": "Routine check-ups and preventive dental care."
+    },
+    {
+      "name": "Root Canal Treatment",
+      "description": "Advanced procedures to save damaged teeth."
+    }
+  ],
+  "theme": {
+    "primary": "#0ea5e9",
+    "secondary": "#38bdf8",
+    "background": "#f8fafc",
+    "text": "#0f172a"
+  }
+}

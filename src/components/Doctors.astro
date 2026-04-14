@@ -1,0 +1,33 @@
+---
+import clinic from '../data/clinic.json';
+
+const doctors = clinic.doctors || [];
+---
+
+<section class="py-20 px-4 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Specialists</h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+      <p class="text-slate-600 mt-6 max-w-2xl mx-auto text-lg hover:-translate-y-4">Meet our team of experienced and dedicated dental professionals.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+      {doctors.map((doc) => (
+        <div class="bg-slate-50 border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+          <div class="h-40 bg-gradient-to-br from-blue-100 to-slate-200 flex items-center justify-center">
+            {/* Generic elegant placeholder for a doctor avatar */}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-20 h-20 text-slate-400 opacity-50"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="p-8 text-center bg-white">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">{doc.name}</h3>
+            <p class="text-blue-600 font-semibold mb-3">{doc.qualification}</p>
+            <div class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-sm font-medium">
+              {doc.experience}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+{
+  "mode": "full",
+  "features": {
+    "showDoctors": true,
+    "showTestimonials": true,
+    "showWhyChooseUs": true
+  },
+  "design": {
+    "heroVariant": "v2",
+    "cardStyle": "elevated"
+  },
+  "clinic_name": "Your Dental Clinic",
+  "tagline": "Advanced Dental Care for a Healthier Smile",
+  "description": "A modern dental clinic offering comprehensive treatments with experienced professionals.",
+  "location": "Your Area, Your City",
+  "phone": "0000000000",
+  "whatsapp": "0000000000",
+  "google_rating": "4.9",
+  "review_count": "120",
+  "services": [
+    {
+      "name": "Teeth Whitening",
+      "description": "Enhance your smile with professional whitening treatments."
+    },
+    {
+      "name": "Dental Implants",
+      "description": "Permanent solutions for missing teeth."
+    },
+    {
+      "name": "Orthodontics",
+      "description": "Braces and aligners for perfect alignment."
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr. Name",
+      "qualification": "BDS, MDS",
+      "experience": "10+ Years Experience"
+    }
+  ],
+  "features_list": [
+    {
+      "title": "Advanced Equipment",
+      "description": "Modern technology for accurate diagnosis and treatment."
+    },
+    {
+      "title": "Painless Procedures",
+      "description": "Comfort-focused dental care for all patients."
+    },
+    {
+      "title": "High Hygiene Standards",
+      "description": "Strict sterilization protocols for safety."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Patient Name",
+      "review": "Excellent service and very professional staff.",
+      "rating": 5
+    }
+  ],
+  "theme": {
+    "primary": "#0ea5e9",
+    "secondary": "#38bdf8",
+    "background": "#f8fafc",
+    "text": "#0f172a"
+  }
+}

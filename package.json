@@ -9,9 +9,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "demo": "node auto.js demo",
+    "full": "node auto.js full",
+    "use:demo": "copy src\\data\\demo.json src\\data\\clinic.json",
+    "use:full": "copy src\\data\\full.json src\\data\\clinic.json"
   },
   "dependencies": {
-    "astro": "^6.1.3"
+    "@tailwindcss/vite": "^4.2.2",
+    "astro": "^6.1.3",
+    "tailwindcss": "^4.2.2"
   }
 }
